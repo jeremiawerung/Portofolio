@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- --------- UNICONS ---------- -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"/>
+
+    <!-- --------- CSS ---------- -->
+    <!-- Link ke CSS eksternal yang sudah ada -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- --------- FAVICON ---------- -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"/>
+    <title>Gallery</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+          <p class="nav-name">Jeremia</p>
+          <span>.</span>
+        </div>
+        <div class="audio-bar">
+          <audio autoplay loop>
+            <source src="assets/Audio Test.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <!-- Menu navigasi -->
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav_menu_list">
+            <li class="nav_list">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav_list">
+              <a href="index.html#about" class="nav-link">About</a>
+            </li>
+            <li class="nav_list">
+              <a href="index.html#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav_list">
+              <a href="gallery.html" class="nav-link active-link">Gallery</a>
+            </li>
+            <li class="nav_list">
+              <a href="index.html#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tombol untuk mengunduh CV -->
+        <div class="nav-button">
+            <a href="https://drive.google.com/file/d/1yHkSPgjrWRiF-FmQ0Iq_mgpm36Z93-9j/view?usp=sharing" class="btn" target="_blank">
+              Download CV <i class="uil uil-file-alt"></i>
+            </a>
+          </div>
+
+        <div class="nav-menu-btn">
+          <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+<!-- -------------- MAIN GALLERY SECTION ---------------- -->
+<main class="wrapper">
+  <section class="section" id="gallery">
+      <div class="top-header">
+          <h1>Gallery</h1>
+      </div>
+        <!-- Category Selection Navigation (Centered within the gallery section) -->
+        <div class="gallery-nav">
+            <button onclick="showGallery('kegiatan-organisasi')">Kegiatan Organisasi</button>
+            <button onclick="showGallery('sertifikat')">Sertifikat</button>
+        </div>
+      <!-- Section to display selected category content -->
+      <section class="section" id="gallery-content">
+        <div class="top-header">
+          <h1 id="gallery-title">Kegiatan Organisasi</h1>
+        </div>
+        <div class="content photos" id="gallery-items">
+          <!-- Content for Kegiatan Organisasi (default) -->
+          <div class="photo">
+            <img src="assets/images/32c8a7e2-e17a-4dcf-9e52-28f1e545948c.jpg" alt="Foto 1">
+          </div>
+          <div class="photo">
+            <img src="assets/images/Sosialisasi maba.jpg" alt="Foto 2">
+          </div>
+          <div class="photo">
+            <img src="assets/images/IMG_2051.JPG" alt="Foto 3">
+          </div>
+          <div class="video full-width">
+            <iframe src="https://www.youtube.com/embed/e1grRUYsMJc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="photo">
+            <img src="assets/images/Sosialisasi.JPG" alt="Foto 4">
+          </div>
+          <div class="photo">
+            <img src="assets/images/Rapat Rutin.JPG" alt="Foto 5">
+          </div>
+          <div class="photo">
+            <img src="assets/images/Smartcompe.jpg" alt="Foto 6">
+          </div>
+          <div class="fullscreen full-width">
+            <video id="myVideo" controls width="100%">
+              <source src="assets/images/Sosialisasi Dan Ronda.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+
+      <!-- --------------- FOOTER --------------- -->
+      <footer>
+        <div class="top-footer">
+          <p>Jeremia Imanuel Werung</p>
+        </div>
+        <div class="middle-footer">
+          <ul class="footer-menu">
+            <li class="footer_menu_list">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="index.html#about">About</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="index.html#projects">Projects</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="gallery.html">Gallery</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social-icons">
+          <a href="https://www.instagram.com/jeremia.werung/" target="_blank" class="icon">
+            <i class="uil uil-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jeremiaimanuelwerung/" target="_blank" class="icon">
+            <i class="uil uil-linkedin-alt"></i>
+          </a>
+          <a href="https://hmsiuty.com/" target="_blank" class="icon">
+            <i class="uil uil-dribbble"></i>
+          </a>
+          <a href="https://github.com/jeremiawerung" target="_blank" class="icon">
+            <i class="uil uil-github-alt"></i>
+          </a>
+        </div>
+        
+        <div class="bottom-footer">
+          <p>
+            Copyright &copy;
+            <a href="index.html" style="text-decoration: none">Jeremia</a> - All rights reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

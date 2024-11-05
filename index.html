@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- --------- UNICONS ---------- -->
+    <!-- Menyertakan ikon dari Unicons untuk digunakan sebagai ikon navigasi dan ikon sosial -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <!-- --------- CSS ---------- -->
+    <!-- Menghubungkan file CSS untuk styling -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- --------------- HEADER --------------- -->
+      <!-- Bagian navigasi atau header halaman -->
+      <nav id="header">
+        <!-- Logo atau nama di navigasi -->
+        <div class="nav-logo">
+          <p class="nav-name">Jeremia</p>
+          <span>.</span>
+        </div>
+
+        <!-- Bar audio untuk pemutaran otomatis -->
+        <div class="audio-bar">
+          <audio autoplay loop>
+            <source src="assets/Audio Test.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <!-- Menu navigasi -->
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav_menu_list">
+            <!-- Setiap item di menu navigasi -->
+            <li class="nav_list">
+              <a href="#home" class="nav-link active-link">Home</a>
+            </li>
+            <li class="nav_list">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav_list">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav_list">
+              <a href="gallery.html" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav_list">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tombol untuk mengunduh CV -->
+        <div class="nav-button">
+          <a href="https://drive.google.com/file/d/1yHkSPgjrWRiF-FmQ0Iq_mgpm36Z93-9j/view?usp=sharing" class="btn" target="_blank">
+            Download CV <i class="uil uil-file-alt"></i>
+          </a>
+        </div>
+        
+        <!-- Tombol menu untuk tampilan responsif -->
+        <div class="nav-menu-btn">
+          <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+      <!-- -------------- MAIN ---------------- -->
+      <main class="wrapper">
+        <!-- -------------- FEATURED BOX ---------------- -->
+        <!-- Bagian utama berisi nama, deskripsi, dan foto utama -->
+        <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+              <span>Jeremia Imanuel Werung</span>
+            </div>
+            <div class="featured-name">
+              <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+              <p>
+                "I am a dedicated UI/UX designer committed to creating visually appealing and clean web designs that offer users a comfortable and seamless experience."
+              </p>
+            </div>
+
+            <!-- Tombol untuk "Hire Me" dan "Download CV" -->
+            <div class="featured-text-btn">
+              <button class="btn blue-btn">Hire Me</button>
+              <a href="https://drive.google.com/file/d/1yHkSPgjrWRiF-FmQ0Iq_mgpm36Z93-9j/view?usp=sharing" target="_blank">
+                <button class="btn">
+                  Download CV <i class="uil uil-file-alt"></i>
+                </button>
+              </a>
+            </div>
+
+            <!-- Ikon sosial media -->
+            <div class="social_icons">
+              <a href="https://www.instagram.com/jeremia.werung/" target="_blank" class="icon">
+                <i class="uil uil-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/jeremiaimanuelwerung/" target="_blank" class="icon">
+                <i class="uil uil-linkedin-alt"></i>
+              </a>
+              <a href="https://hmsiuty.com/" target="_blank" class="icon">
+                <i class="uil uil-dribbble"></i>
+              </a>
+              <a href="https://github.com/jeremiawerung" target="_blank" class="icon">
+                <i class="uil uil-github-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Gambar utama -->
+          <div class="featured-image">
+            <div class="image">
+              <img src="assets/images/tes fto.jpg" alt="avatar" />
+            </div>
+          </div>
+
+          <!-- Tombol scroll ke bawah -->
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+              <i class="uil uil-mouse-alt"></i>
+              <p>Scroll Down</p>
+            </a>
+          </div>
+        </section>
+
+        <!-- -------------- ABOUT BOX ---------------- -->
+        <!-- Bagian untuk memperkenalkan diri dan menampilkan skill -->
+        <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="about-info">
+                <h3>My introduction</h3>
+                <p>
+                  "I am Jeremia Imanuel Werung, an Information Systems student at University Technology Yogyakarta. 
+                  As HMSI UTY Chairman and KSPM UTY Investment Staff (2023/2024), I gained leadership, management, 
+                  and investment strategy skills. I am dedicated to contributing positively, valuing teamwork, and 
+                  continuously learning to add meaningful impact."
+                </p>
+                <div class="about-btn">
+                  <button class="btn">
+                    Download CV <i class="uil uil-import"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Keterampilan di bidang frontend, backend, dan database -->
+            <div class="col">
+              <div class="skills-box">
+                <div class="skills-header">
+                  <h3>Frontend</h3>
+                </div>
+                <div class="skills-list">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Bootstrap</span>
+                  <span>JavaScript</span>
+                  <span>Vue</span>
+                  <span>React</span>
+                  <span>Angular</span>
+                </div>
+              </div>
+              <div class="skills-box">
+                <div class="skills-header">
+                  <h3>Backend</h3>
+                </div>
+                <div class="skills-list">
+                  <span>PHP</span>
+                  <span>JAVA</span>
+                  <span>Python</span>
+                  <span>C++</span>
+                </div>
+              </div>
+              <div class="skills-box">
+                <div class="skills-header">
+                  <h3>Database</h3>
+                </div>
+                <div class="skills-list">
+                  <span>MySQL</span>
+                  <span>PostgreSQL</span>
+                  <span>MongoDB</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- -------------- PROJECT BOX ---------------- -->
+        <!-- Bagian untuk menampilkan proyek-proyek -->
+        <section class="section" id="projects">
+          <div class="top-header">
+            <h1>Projects</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box" 
+              onClick="window.location.href='https://www.figma.com/design/L9oKkXEWGpaixzEkGCoSoA/PUNCAK-BECICI?node-id=546-1312&node-type='">
+              <i class="uil uil-shop"></i>
+              <h3>Design Web Wisata Becici</h3>
+              <label>Make Design Web With Figma</label>
+            </div>
+            <div class="project-box"
+            onClick="window.location.href='https://www.figma.com/design/7rZkSErkkETi0ANlZEI0ns/Kawanua-UI-UX?m=auto&t=poVrB3DSJAtV3HPr-6'">
+              <i class="uil uil-shop"></i>
+              <h3>Design Figma Kawanua Store</h3>
+              <label>Make Design Web With Figma</label>
+            </div>
+            <div class="project-box"
+            onClick="window.location.href='https://www.figma.com/design/7rZkSErkkETi0ANlZEI0ns/Kawanua-UI-UX?m=auto&t=poVrB3DSJAtV3HPr-6'">
+            <i class="uil uil-comment-heart"></i>
+              <h3>Porto3</h3>
+              <label>Creating a Website for Cafe</label>
+            </div>
+          </div>
+
+          <!-- Video embed YouTube -->
+          <div class="content">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/oPhKjkh4bGA?start=7" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+              
+            <!-- Galeri Foto -->
+            <div class="photos">
+                <div class="photo">
+                    <img src="assets/images/IMG_0489.JPG" alt="Foto 1">
+                </div>
+                <div class="photo">
+                    <img src="assets/images/JJJ.jpg" alt="Foto 2">
+                </div>
+                <div class="photo">
+                    <img src="assets/images/IMG_2051.JPG" alt="Foto 3">
+                </div>
+            </div>
+                        <!-- Teks untuk mengakses halaman galeri -->
+                <div class="gallery-link" style="text-align: right; margin-top: 25px;">
+                  <a href="gallery.html" class="btn">View Full Gallery</a>
+                </div>
+          </div>
+        </section>
+
+        <!-- -------------- CONTACT BOX ---------------- -->
+        <!-- Bagian kontak, form input nama, email, dan pesan -->
+        <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you have a project in your mind, contact me here</span>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="contact-info">
+                <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                <p><i class="uil uil-envelope"></i> Email: jeremia07102004@gmail.com</p>
+                <p><i class="uil uil-phone"></i> Call/Whatsapp : (+62895805193249)</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-control">
+                <div class="form-inputs">
+                  <input type="text" class="input-field" placeholder="Name" />
+                  <input type="text" class="input-field" placeholder="Email" />
+                </div>
+                <div class="text-area">
+                  <textarea placeholder="Message"></textarea>
+                </div>
+                <div class="form-button">
+                  <button class="btn">
+                    Send <i class="uil uil-message"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+        <!-- Scroll to Top Button -->
+        <a href="#" class="scroll-top" onclick="scrollToTop()">
+          <img src="assets/images/arrow-up-on-a-black-circle-background_icon-icons.com_73668.svg" alt="Scroll to Top" class="scroll-icon">
+        </a>
+
+      <!-- --------------- FOOTER --------------- -->
+      <!-- Bagian footer dengan navigasi, ikon sosial, dan copyright -->
+      <footer>
+        <div class="top-footer">
+          <p>Jeremia Imanuel Werung</p>
+        </div>
+        <div class="middle-footer">
+          <ul class="footer-menu">
+            <li class="footer_menu_list">
+              <a href="#home">Home</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#about">About</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="gallery.html">Gallery</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social-icons">
+          <a href="https://www.instagram.com/jeremia.werung/" target="_blank" class="icon">
+            <i class="uil uil-instagram"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jeremiaimanuelwerung/" target="_blank" class="icon">
+            <i class="uil uil-linkedin-alt"></i>
+          </a>
+          <a href="https://hmsiuty.com/" target="_blank" class="icon">
+            <i class="uil uil-dribbble"></i>
+          </a>
+          <a href="https://github.com/jeremiawerung" target="_blank" class="icon">
+            <i class="uil uil-github-alt"></i>
+          </a>
+        </div>
+        
+        <div class="bottom-footer">
+          <p>
+            Copyright &copy;
+            <a href="#home" style="text-decoration: none">Jeremia</a> - All rights reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
